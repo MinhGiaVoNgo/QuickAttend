@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "QuickAttend",
+    "slug": "quickattend",
+    "scheme": "quickattend",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": ["expo-router", "expo-camera", "expo-location", "expo-local-authentication"],
+    "experiments": { "typedRoutes": true },
+    "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription": "QuickAttend uses the camera to scan attendance QR codes.",
+        "NSLocationWhenInUseUsageDescription": "QuickAttend verifies your location during attendance check-in."
+      }
+    },
+    "android": {
+      "permissions": ["CAMERA", "ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    }
+  }
+}
